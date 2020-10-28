@@ -3,7 +3,7 @@ WORKDIR /go/src/github.com/openshift/ovirt-csi-driver-operator
 COPY . .
 RUN make
 
-FROM registry.svc.ci.openshift.org/openshift/origin-v4.6:base
+FROM registry.svc.ci.openshift.org/openshift/origin-v4.5:base
 COPY --from=builder /go/src/github.com/openshift/ovirt-csi-driver-operator/ovirt-csi-driver-operator /usr/bin/
 COPY manifests /manifests
 
