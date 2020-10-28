@@ -75,7 +75,7 @@ spec:
 
       containers:
         - name: ovirt-csi-driver-operator
-          image: quay.io/openshift/csi-driver-operator
+          image: quay.io/timhofmann/ovirt-csi-driver-operator
           imagePullPolicy: IfNotPresent
           args:
             - start
